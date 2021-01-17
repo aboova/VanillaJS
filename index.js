@@ -1,3 +1,13 @@
-const title = document.querySelector("#id");
+const title = document.querySelector("#title");
 
-title.innerHTML = "Hello JS";
+const CLICKED_CLASS = "clicked";
+
+function handleClick() {
+    title.classList.toggle(CLICKED_CLASS);
+}
+
+function init() {
+    title.addEventListener("click", handleClick);   
+}
+
+init();
