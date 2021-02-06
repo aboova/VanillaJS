@@ -7,20 +7,21 @@
         href="index.css" />
     </head>
 <body>
-    <div class="js-clock">
+    <div id="clock" class="js-clock">
         <h1>00:00</h1>
     </div>
-    <form class="js-form form">
-        <input type="text" placeholder="What is your name?">
+    <form class="js-form form" autocomplete="off">
+        <input id= "namebox" type="text" placeholder="Hello, What is your name?"
+        style="color:white">
     </form>
-    <h4 class="js-greeting greetings"></h4>
-    <form class="js-toDoForm">
-        <input type="text" placeholder="Write a to do">
+    <h4 id="greeting" class="js-greeting greetings"></h4>
+    <form id="todo"class="js-toDoForm" autocomplete="off">
+        <input id="todobox" type="text" placeholder="Write a to do">
     </form>
-    <ul class="js-toDoList">
-        
+    <ul style="list-style-type: none;" class="js-toDoList">
     </ul>
-    <span class="js-weather"></span>
+    <span style="display: inline-block; text-align:right; width:98%; margin-top:570px;" 
+    id="weather" class="js-weather"></span>
     <script src="clock.js"></script>
     <script src="greeting.js"></script>
     <script src="todo.js"></script>

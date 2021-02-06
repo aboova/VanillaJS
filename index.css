@@ -3,8 +3,8 @@ body {
 }
 
 h1 {
-  color: #34495e;
-  transition: color 0.5s ease-in-out;
+  color: rgb(208, 213, 214);
+  transition: color 1s ease-in-out;
 }
 
 .clicked {
@@ -41,4 +41,121 @@ h1 {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+#weather {
+  color: white;
+}
+
+#clock {
+  position: relative;
+  text-align: center;
+  top: 300px;
+  font-size: 45px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.js-form {
+  position: relative;
+  text-align: center;
+  top: 300px;
+}
+
+#namebox {
+  caret-color: white;
+  width: 400px;
+  height: 50px;
+  font-size: 30px;
+  outline-style: white;
+  outline: none;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-color: white;
+  background-color: transparent;
+}
+
+#namebox::placeholder {
+  color: white;
+}
+
+#todo {
+  color: white;
+  position: relative;
+  text-align: center;
+  top: 350px;
+}
+
+#todobox {
+  color: white;
+  caret-color: white;
+  font-size: 25px;
+  text-align: center;
+  outline-style: white;
+  outline: none;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-color: white;
+  background-color: transparent;
+}
+
+#greeting {
+  color: white;
+  position: relative;
+  text-align: center;
+  top: 310px;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: fadein 2s;
+  -moz-animation: fadeIn 2s;
+  -webkit-animation: fadein 2s;
+  -o-animation: fadein 2s;
+}
+
+ul {
+  display: table;
+  color: white;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 350px;
+  font-size: 20px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
